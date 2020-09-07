@@ -244,18 +244,19 @@ const styles = StyleSheet.create({
     height: 48,
     color: 'black',
     borderBottomWidth: 2,
-    borderBottomColor: '#f88379',
+    borderBottomColor: '#BCC6CC',
     marginBottom: 10,
   },
   input2: {
-    fontSize: 15,
+    fontSize: 20,
     height: 100,
     color: 'black',
     borderWidth: 2,
-    borderColor: '#f88379',
+    borderColor: '#BCC6CC',
     marginTop: 10,
     marginBottom: 10,
-    textAlignVertical: 'top'
+    textAlignVertical: 'top',
+    borderRadius: 10
   },
   label: {
     fontSize: 20,

@@ -66,7 +66,7 @@ class AppButton extends Component {
                     this.backgroundColor = 'firebrick';
                     break;
                 case 'maps':
-                    this.backgroundColor = 'springgreen';
+                    this.backgroundColor = '#4cc552';
                     break;
                 case 'save':
                 default:

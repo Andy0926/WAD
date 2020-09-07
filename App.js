@@ -37,13 +37,15 @@ export default createStackNavigator({
   navigationOptions: {
 
     headerStyle: {
-        backgroundColor: '#f88379'
+
+        backgroundColor: '#e5e4e2',
     },
 
     headerTintColor: 'black',
 
     headerTitleStyle: {
       fontWeight: 'bold',
+      fontSize: 22
     },
 
   },

@@ -12,7 +12,7 @@ import {
 } from 'react-native';
 let SQLite = require('react-native-sqlite-storage');
 let config = require('./Config');
-let bg0 = require('./img/default.png');
+let bg0 = require('./img/default.jpg');
 let bg1 = require('./img/bg1.jpg');
 let bg2 = require('./img/bg2.jpg');
 
@@ -198,19 +198,23 @@ const styles = StyleSheet.create({
     borderBottomWidth: 1,
   },
   itemTitle: {
-    color:'white',
-    fontSize: 21,
+    color:'black',
+    fontSize: 22,
     fontWeight: 'bold',
+    backgroundColor:'rgba(0,0,0,0.1)',
+    borderRadius:10
   },
   itemDate: {
-    color:'white',
+    color:'black',
     fontSize: 18,
+    backgroundColor:'rgba(0,0,0,0.1)',
+    borderRadius:10
   },
   map:{
     position:'absolute',
     width:50,
     height:50,
-    backgroundColor:'#f88379',
+    backgroundColor:'#e5e4e2',
     borderRadius:50,
     bottom:10,
     right:10,
@@ -221,7 +225,7 @@ const styles = StyleSheet.create({
     position:'absolute',
     width:50,
     height:50,
-    backgroundColor:'#f88379',
+    backgroundColor:'#e5e4e2',
     borderRadius:50,
     bottom:10,
     right:10,
@@ -235,6 +239,6 @@ const styles = StyleSheet.create({
   },
   innerFrame:{
     flex:1,
-    backgroundColor:'rgba(0,0,0,0.5)'
+    backgroundColor:'rgba(0,0,0,0.1)'
   }
 });

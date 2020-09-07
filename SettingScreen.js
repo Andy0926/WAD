@@ -71,8 +71,8 @@ export default class SettingScreen extends Component<Props>{
         >
               <Picker.Item label="-Select Wallpaper-" value="" />
               <Picker.Item label="Default" value="0" />
-              <Picker.Item label="City" value="1" />
-              <Picker.Item label="Space" value="2" />
+              <Picker.Item label="Mind" value="1" />
+              <Picker.Item label="Peace" value="2" />
 
         </Picker>
 
@@ -81,7 +81,7 @@ export default class SettingScreen extends Component<Props>{
          <Text style={styles.label}>Countdown Timer: </Text>
          <TextInput
            style={styles.countdown}
-           onChangeText={(itemValue,itemIndex) => {
+           onValueChange={(itemValue,itemIndex) => {
              if(itemValue !== ""){
              this.setState({cd: itemValue});
              this._saveSetting('cd', itemValue)
@@ -116,6 +116,6 @@ const styles = StyleSheet.create({
   countdown:{
     fontSize: 15,
     borderBottomWidth: 2,
-    borderBottomColor: '#f88379',
+    borderBottomColor: '#e5e4e2',
   }
 });

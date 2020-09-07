@@ -127,6 +127,7 @@ export default class MapScreen extends Component<Props> {
         <AppButton title={'Open in Maps'}
         theme={'maps'}
         onPress={this.onPress}
+        style={styles.button}
         />
       </View>
     );
@@ -153,4 +154,7 @@ const styles = StyleSheet.create({
     textAlign: 'center',
     margin: 10,
   },
+  button:{
+    backgroundColor: '#e4e2e6',
+  }
 });

@@ -68,6 +68,7 @@ export default class ViewScreen extends Component<Props> {
       let cd = await AsyncStorage.getItem('cd');
       if (cd !== '') {
         this.setState({cd: cd});
+        console.log('read');
       }
     } catch (error) {
       console.log('## ERROR READING ITEM ##: ', error);
@@ -254,10 +255,12 @@ const styles = StyleSheet.create({
     backgroundColor: '#FFF'
   },
   output: {
-    fontSize: 24,
-    color: 'purple',
+    fontSize: 19,
+    color: 'black',
     marginTop: 10,
     marginBottom: 10,
+    backgroundColor:'rgba(0,0,0,0.1)',
+    borderRadius: 10,
   },
   float:{
     color:'white',
